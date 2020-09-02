@@ -1,0 +1,6 @@
+<view class="bg">
+  <view class="register" style="display:{{register}};">
+    <view class="text"><textarea bindinput="fninputnews"></textarea></view>
+    <view class="_btn" bindtap="refer">提交</view>
+  </view>
+</view>

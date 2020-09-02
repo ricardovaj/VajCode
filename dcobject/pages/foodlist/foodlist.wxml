@@ -1,0 +1,41 @@
+<!--pages/foodlist/foodlist.wxml-->
+<view class="container">
+	<!-- 搜索开始 -->
+	<view class="searchbox">
+		<image src="/images/s3.png " mode="widthFix" />
+		<input type="text" bindinput="fnsearchinputchange" value="{{key}}" placeholder="搜美食，菜谱" />
+</view>
+	<!-- 搜索结束 -->
+<view class="listbox">
+	<block wx:for="{{foodlist}}"  wx:key="key" wx:for-index="index" wx:for-item="item">
+		<view class="fooditem" hover-class="itemhover" data-id="{{item.id}}" bindtap="fngotofoodview">
+				<image src="http://127.0.0.1:8000/static/uploadimg/{{item.imgurl}}" mode="widthFix" />
+				<view class="rightbox">
+						<view class="line1">{{item.proname}}</view>
+						<view class="line2">{{item.brief}}</view>
+						<view class="line3">￥{{item.price}}</view>
+						<view class="line4"><text style="color:red">7.8折扣</text><text>热销</text></view>
+					<!-- <view class="addbox">
+						<view class="add" data-food="{{item}}" bindtap="fnjia">+</view>
+						<view class="nember">{{buynum}}</view>
+						<view class="jian" data-food="{{item}}" bindtap="fnjian">-</view>
+					</view> -->
+				</view>
+			</view>
+	</block>
+
+
+ </view>
+
+</view>
+
+<!-- 购物车 -->
+<view class="FoodBottom">
+  <view class="FoodLength" bindtap="PayList">
+    <image src="/images/购物车.png" class="FoodLengthImg"></image>
+    <view class="FoodLengthNumber">{{proallcount}}</view>
+  </view>
+  <view class="FoodMoney">¥{{sumprice}}</view>
+</view>
+<view class="GoPay" bindtap="GoPay">去结算</view>
+<view class="Foodbg" wx:if="{{bg}}" bindtap="PayList"></view>

@@ -1,0 +1,51 @@
+{
+  "pages": [
+    "pages/start/start",
+    "pages/index/index",
+   
+    "pages/foodlist/foodlist",
+    "pages/newcar/newcar",
+    "pages/shopcar/shopcar",
+    "pages/users/users",
+    "pages/login/login",
+    "pages/confirm/confirm",
+    "pages/foodview/foodview",
+    "pages/cookerview/cookerview",
+    "pages/newsadd/newsadd",
+    "pages/myorder/myorder"
+    
+  ],
+  "window": {
+    "navigationBarBackgroundColor": "#ffffff",
+    "navigationBarTextStyle": "black",
+    "navigationBarTitleText": "点餐demo",
+    "backgroundColor": "#eeeeee",
+    "backgroundTextStyle": "light",
+    "enablePullDownRefresh": false
+  },
+  "tabBar": {
+    "selectedColor": "#ff0000",
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "首页",
+        "iconPath": "images/首页 (3).png",
+        "selectedIconPath": "images/首页 (2).png"
+      },
+      {
+        "pagePath": "pages/foodlist/foodlist",
+        "text": "点餐",
+        "iconPath": "images/综合 (1).png",
+        "selectedIconPath": "images/综合.png"
+      },
+      {
+        "pagePath": "pages/users/users",
+        "text": "我的",
+        "iconPath": "images/用户 (1).png",
+        "selectedIconPath": "images/用户.png"
+      }
+    ]
+  },
+  "style": "v2",
+  "sitemapLocation": "sitemap35.json"
+}

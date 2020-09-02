@@ -1,0 +1,50 @@
+<view>
+	<!-- head-manage -->
+	<view class="top">
+		<view class="center">
+			<view class="center_top">
+				<view class="center_img" bindtap="toBaseInfo">
+					<!-- <image src="../../static/info_img.jpg"></image> -->
+					<open-data type="userAvatarUrl" class="user_head"></open-data>
+				</view>
+				<view class="center_info" bindtap="toBaseInfo">
+					<view class="center_name">{{msg}}</view>
+					<!-- <view class="center_phone">phone:{{phone}}</view> -->
+					<view class="center_phone">{{currentusertruename}}</view>
+				</view>
+			</view>
+			<view class="center_down">
+				<view class="center_rank" bindtap="toNone">
+					<image class="rank_icon" src="/images/订单 .png"></image>
+					<text class="rank_text">我的订单</text>
+				</view>
+				<view class="center_score" bindtap="toNews">
+					<image class="rank_icon" src="/images/评价 .png"></image>
+					<text class="rank_text">我的评价</text>
+				</view>
+			</view>
+		</view>
+		<image src='https://6661-fatdown-wxapp-sg2p1-1300398887.tcb.qcloud.la/wave.gif?sign=045605c672f482a8c3d428abed669aa7&t=1570674356' mode='scaleToFill' class='gif-wave'></image>
+	</view>
+	<!-- 功能 -->
+	<view class="item" hover-class="hoveritem" bindtap="fngotomyorder">
+		<image src="/images/收藏.png" mode="widthFix" />
+		<view class="rightbox">我的收藏</view>
+	</view>
+	<view class="item" hover-class="hoveritem">
+		<image src="/images/卡包.png" mode="widthFix" />
+		<view class="rightbox" bindtap="newcar">卡包</view>
+	</view>
+	<view class="item" hover-class="hoveritem" bindtap="fnlogout">
+		<image src="/images/通用.png" mode="widthFix" />
+		<view class="rightbox">通用</view>
+	</view>
+	<view class="item" hover-class="hoveritem" bindtap="fnlogout">
+		<image src="/images/退出.png" mode="widthFix" />
+		<view class="rightbox">退出账号</view>
+	</view>
+
+
+
+
+</view>

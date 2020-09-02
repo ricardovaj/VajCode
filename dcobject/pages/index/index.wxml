@@ -1,0 +1,79 @@
+<!-- 轮播 -->
+<view class="ppt">
+	<view class="page-section page-section-spacing swiper">
+		<swiper style="height:200px" indicator-dots="true" autoplay="true" circular="true" interval="3000" duration="500">
+			<block wx:for="{{viewpagerlist}}" wx:key="key" wx:for-index="index" wx:for-item="item">
+				<swiper-item>
+					<view class="swiper-item">
+						<image src="http://127.0.0.1:8000/static/upviewimg/{{item.imgurl}}" mode="widthFix" />
+					</view>
+				</swiper-item>
+			</block>
+		</swiper>
+
+	</view>
+	<view class="searchbox">
+		<input type="text" bindconfirm="fnsearch" placeholder="本店搜索" />
+	</view>
+</view>
+
+<!-- 功能模块 -->
+<view class="iconbox">
+	<view class="iconitem" hover-class="hovertag" bindtap="iconwaimai">
+		<image class="iconmk" src="/images/外卖.png" /><text>外卖</text>
+	</view>
+	<view class="iconitem" hover-class="hovertag" bindtap="icondiacnan">
+		<image class="iconmk" src="/images/点餐.png" /><text>点餐</text>
+	</view>
+</view>
+
+<!-- 首页foodlist -->
+<view class="foodbox">
+	<!-- foodlist head -->
+	<view class="head">
+		<image src="/images/jq.png"></image>
+		<text class="head-title1">精品推荐</text>
+		<text class="head-tiele2">本店招牌菜品</text>
+	</view>
+	<view class="foodlistbox">
+		<block wx:for="{{foodlist}}" wx:key="key" wx:for-index="index" wx:for-item="item">
+			<view class="fooditem" hover-class="fooditemhover" data-id="{{item.id}}" data-foodname="回锅肉" bindtap="fngotofoodview">
+				<text class="foodhot">招牌推荐</text>
+				<image class="fooditemimage" src="http://127.0.0.1:8000/static/uploadimg/{{item.imgurl}}" mode="scaleToFill" />
+				<text class="foodname">{{item.proname}}</text>
+				<text class="foodprice">￥{{item.price}}</text>
+				<text class="foodsell">半年售206</text>
+				<image class="foodmore" src="/images/icons_more.png"></image>
+
+			</view>
+		</block>
+	</view>
+</view>
+
+<view class="cookerhead">
+	<image src="/images/jq.png"></image>
+	<text class="cookerhead-title1">名厨推荐</text>
+	<text class="cookerhead-tiele2">八大菜系名厨</text>
+</view>
+<!-- 底部cooker轮播 -->
+<view class="ppt2">
+	<view class="page-section page-section-spacing swiper">
+		<swiper style="height:200px" autoplay="true" circular="true" interval="3000" duration="500">
+		<block wx:for="{{cookerlist}}" wx:key="key" wx:for-index="index" wx:for-item="item">
+			<swiper-item>
+				<view class="swiper-item" hover-class="cookeritemhover" bindtap="fncookerview">
+				<!-- cooker 容器 -->
+					<view class="cookerpptbox">
+						<view class="pptbox">
+							<text class="cookerbrief">{{item.cookernews}}</text>
+						</view>
+						<image class="cookerppt" src="http://127.0.0.1:8000/static/upcookerimg/{{item.imgurl}}" mode="widthFix"></image>
+						<text class="cookerpptname"> {{item.cookername}}</text>
+					</view>
+				</view>
+			</swiper-item>
+    </block>
+
+		</swiper>
+	</view>
+</view>
