@@ -1,0 +1,27 @@
+<view class="bg">
+  <!-- 登录 -->
+  <view class="login" style="display:{{login}};">
+    <view class="title"><image src="../../images/yun.png"></image> Login</view>
+    <view class="notice">{{msg}}</view>
+    <view class="putin">
+      <view class="username"><image src="../../images/user.png"></image><input type="text" bindinput="fninputeditusername" placeholder="账号" ></input></view>
+      <view class="password"><image src="../../images/pass.png"></image><input type="password" bindinput="fninputeditpassword" placeholder="密码"></input></view>
+    </view>
+    <view class="btn" bindtap="fnlogin">Sign In</view>
+    <view class="res" bindtap="enroll">Don't have an account</view>
+  </view>
+  <!-- 注册 -->
+  <view class="register" style="display:{{register}};">
+    <view class="title"><image src="../../images/yun.png"></image> Register</view>
+    <view class="notice">{{msg}}</view>
+    <view class="_putin">
+      <view class="username"><image src="../../images/user.png"></image><input type="text" bindinput="fninputusername" placeholder="账号"></input></view>
+      <view class="password"><image src="../../images/pass.png"></image><input type="password" bindinput="fninputpassword" placeholder="密码"></input></view>
+      <view class="tel"><image src="../../images/tel.png"></image><input type="text" bindinput="fninputtel" placeholder="联系方式"></input></view>
+      <view class="del"><image src="../../images/del.png"></image><input type="text" bindinput="fninputdre" placeholder="现住地址"></input></view>
+      <view class="truename"><image src="../../images/name.png"></image><input type="text" bindinput="fninputtruenames" placeholder="真实姓名"></input></view>
+    </view>
+    <view class="_btn" bindtap="register">Sign In</view>
+    <view class="_res" bindtap="login">You have registered</view>
+  </view>
+</view>

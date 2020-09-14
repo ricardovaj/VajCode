@@ -1,0 +1,36 @@
+<!--pages/myorder/myorder.wxml-->
+<view class="container">
+    <view class="box1">
+      <view class="top1">订单已完成</view>
+      <view class="top2">感谢您的对我们的信任，期待再次光临</view>
+      <view class="top3" bindtap="again">再来一单</view>
+    </view>
+   <view class="prolistbox">
+        <block wx:for="{{myorderlist}}"  wx:key="key" wx:for-index="index" wx:for-item="item">
+          <view class="proitem" bindtap="fngotoorder" data-id="{{item.id}}" hover-class="itemhover" style="margin-top:20rpx;">
+            <image src="{{item.imgurl}}"  mode="widthFix" class="a11"/>
+            <view class="rightbox">
+              <view class="line1">
+                <text>{{item.proname}}</text>
+                <text class="text1">单价：￥{{item.price}}.00</text>
+                <text class="text2" style="display:inline-block;">总价：￥{{item.sumprice}}.00</text>
+              </view>
+              <view class="line2">
+                <text>x{{item.procount}}</text>
+                
+                
+            </view>
+            </view>
+            <view class="info">
+                <view class="a1">订单号：{{item.orderid}}</view>
+                <view class="a1">姓名：{{item.sname}}</view>
+                <view class="a1">电话：{{item.stel}}</view>
+                <view class="a1">地址：{{item.saddress}}</view>               
+                <view class="a1">下单：{{item.ctime}}</view>
+                <view class="a1">备注：{{item.memo}}</view>
+            </view>
+          </view> 
+        </block> 
+   </view> 
+</view>
+

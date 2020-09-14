@@ -1,0 +1,318 @@
+/* pages/index/index.wxss */
+/* 轮播 */
+.ppt {
+  width: 100%;
+  position: relative;
+}
+
+.ppt image {
+  width: 100%;
+}
+/* 搜索框 */
+.searchbox {
+  width: calc(100% - 40rpx);
+  height: 90rpx;
+  border: solid 1px #eee;
+  position: absolute;
+  left: 20rpx;
+  bottom: -43px;
+  border-radius: 45rpx;
+  background-color: #fff;
+  z-index: 100;
+  box-shadow: 7px -2px 5px #8F8F8F;
+}
+
+.searchbox input {
+  height: 90rpx;
+  padding-left: 20rpx;
+  text-align: center;
+}
+
+/* 功能模块 */
+.iconbox {
+  width: 100%;
+  height: 135px;
+  /* display: flex; */
+  /*让外面的大盒子布局模式为弹性布局*/
+  /* padding-top: 120rpx; */
+}
+
+.iconitem{
+  /* flex: 1; */
+  width: 175px;
+  height:100px;
+  float: left;
+  margin-top: 65px;
+  margin-left: 20px;
+  background-color: rgb(247, 211, 9);
+  border-radius: 15px;
+  box-shadow: -2px 2px 5px #B8B8B8;
+}
+
+.iconmk {
+  height: 50px;
+  width: 50px;
+  /* border: 1px solid #8F8F8F ; */
+  padding-top: 25px;
+  padding-left: 30px;
+  border-radius: 15px;
+  
+  /* background-color: rgb(254, 185, 37); */
+}
+
+.hovertag {
+  opacity: 0.8;
+  /*把不透明度设置为0.6*/
+}
+
+.iconbox text::before {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+.iconitem text {
+  font-size: 20px;
+  margin-top: -45px;
+  margin-left: 70px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  /* float: right; */
+  align-items: center;
+  /* padding-left: 20px; */
+}
+
+/* 功能模块结束 */
+
+/* foodlist */
+
+
+.foodbox{
+  width: 100%;
+  margin-top: 50rpx;
+  height:850rpx;
+}
+
+.head{
+  width: 100%;
+  height: 40px;
+  background: linear-gradient(rgb(217, 220, 220) , rgb(211, 211, 216));
+  margin-top: 60px;
+  display: block;
+}
+.head image{
+  width: 30px;
+  height: 30px;
+  position: absolute;
+  margin-top: 5px;
+}
+.head-title1{
+  font-size: large;
+  position: absolute;
+  margin-top: 6px;
+  margin-left: 8%;
+}
+.head-tiele2{
+  font-size: 14px;
+  position: absolute;
+  margin-top: 10px;
+  margin-left: 28%;
+  color: rgb(89, 87, 87);
+}
+
+.foodlistbox{
+  padding-top:20rpx;
+  width: 100%;
+  height:750rpx;
+}
+
+.fooditem{
+  width:calc(50% - 20rpx);
+  height:360rpx;
+  float: left;
+  margin:10rpx;
+  border-radius: 8rpx;
+  overflow: hidden;
+  box-shadow: 0 0 10rpx 2rpx rgba(46, 45, 45, 0.3);
+}
+
+/* .foodhot{
+  width: 40px;
+  height: 40px;
+  position: absolute;
+  display: block;
+  clear: both;
+  margin-left:15px ;
+} */
+
+.foodhot{
+  font-size: 12px;
+  position: absolute;
+  background-color: rgb(223, 223, 223);
+  border-radius: 6px;
+  color: rgb(19, 18, 18);
+  opacity: 0.5;
+  border: 1px solid #B8B8B8 ;
+  margin-left: 8px;
+  margin-top: 10px;
+}
+
+.fooditemhover{
+  opacity: 0.6;/*不透明度调整为0.6*/
+}
+
+.fooditemimage{
+  width: 95%;
+  height:220rpx;
+  padding:10rpx ;
+  border-radius: 15px;
+}
+.foodname{
+  font-weight: bold;
+  padding-left:10rpx;
+  padding-top: 10rpx;
+  position: absolute;
+  /* display: block; */
+}
+.foodprice{
+  position: absolute;
+  color: #E6706C;
+  margin-left: 140px;
+  margin-top: 5px;
+
+}
+
+.foodsell{
+  position: absolute;
+  font-size: 12px;
+  color: #8F8F8F;
+  padding-top: 40px;
+  padding-left: 5px;
+}
+
+.foodmore{
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  padding-top: 40px;
+  margin-left: 150px;
+}
+
+/* 轮播2 */
+
+.ppt2 {
+  width: 90%;
+  position: relative;
+  margin-left: 5%;
+  margin-top: 20px;
+ 
+}
+.cookerpptbox{
+  border-radius: 15px;
+  box-shadow: 0px 0px 10rpx 2rpx rgba(60, 59, 59, 0.3);
+  border:1px solid rgb(243, 235, 235);
+}
+
+.ppt2 image {
+  border-radius: 5px;
+  width: 30%;
+  margin: 20px;
+}
+
+.cookerpptname{
+  font-size: large;
+  position: absolute;
+  margin-top: 20px;
+}
+.pptbox{
+  position: absolute;
+  top: 80px;
+  left: 150px;
+  width: 200px;
+  height:50px;
+ /* border: 1px solid blue; */
+}
+/* cookerlis */
+.cookeritemhover{
+  opacity: 0.6;
+}
+
+.cookerbox{
+  width: 100%;
+  margin-top: 50rpx;
+}
+.cookerhead{
+  width: 100%;
+  height: 40px;
+  background: linear-gradient(rgb(217, 220, 220) , rgb(211, 211, 216));
+  margin-top: 1px;
+  display: block;
+}
+
+.cookerhead image{
+  width: 30px;
+  height: 30px;
+  position: absolute;
+  margin-top: 5px;
+}
+.cookerhead-title1{
+  font-size: large;
+  position: absolute;
+  margin-top: 6px;
+  margin-left: 8%;
+}
+.cookerhead-tiele2{
+  font-size: 14px;
+  position: absolute;
+  margin-top: 10px;
+  margin-left: 28%;
+  color: rgb(89, 87, 87);
+}
+
+.cookerlistbox{
+width: 100%;
+/* height: 370rpx; */
+/* display: flex; */
+/* background-color: #E6706C; */
+}
+.cookeritem{
+  flex-direction: column-reverse;
+  width: 90%;
+  height:220rpx ;
+  margin-top: 10px;
+  margin-left: 5% ;
+  /* background-color: aqua; */
+  border-radius: 5px;
+  box-shadow: 0 0 10rpx 2rpx rgba(46, 45, 45, 0.3);
+}
+
+.cookerimg{
+  display: inline-block;
+  width:23% ;
+  border-radius: 5px;
+  margin: 10px;
+}
+
+.cookername{
+  font-size: large;
+  position: absolute;
+  margin-top: 10px;
+  margin-left: 5px;
+}
+.cookerbriefbox{
+  height: 30px;
+  width: 250px;
+  border: khaki;
+  position: absolute;
+  padding-top: 60px;
+  padding-left: 110px;
+}
+.cookerbrief{
+  font-size: 12px;
+  color: #B8B8B8;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 3;
+  overflow: hidden;
+}

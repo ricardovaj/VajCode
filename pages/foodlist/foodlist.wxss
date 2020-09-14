@@ -1,0 +1,258 @@
+/* pages/foodlist/foodlist.wxss */
+page{
+  width: 100%;
+  height: 100%;
+}
+.container{
+  width: 100%;
+  height: 100%;
+}
+.searchbox{
+  width:calc(100% - 40rpx);
+  height:90rpx;
+  background-color:#F1F1F1;
+  margin:0 auto;
+  border-radius: 45rpx;
+  position: relative;/*给图标的父容器加一个相对定位的属性，把他作为定位的参考对象。*/
+}
+
+.searchbox input{
+  height: 90rpx;
+  margin: 0 100rpx;
+}
+
+.searchbox image{
+  width: 50rpx;
+  position: absolute;
+  left:20rpx;
+  top:22rpx;
+}
+
+.listbox{
+  width: 100%;
+  height:calc(100% - 90rpx);
+  overflow-y: scroll;
+}
+
+.fooditem{
+  height:270rpx;
+  width: 90%;
+  border: solid 1rpx #c9c8c8;
+  position: relative;
+  left: 5%;
+  top: 10px;
+  border-radius: 5px;
+}
+
+.fooditem image{
+  width: 30%;
+  margin-top: 80rpx;
+  margin-left: 10px;
+  border-radius: 8px;
+}
+.rightbox{
+  width:calc(100% - 260rpx);
+  height: 270rpx;
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+.line1{
+  font-size: 45rpx;
+  font-weight: bold;
+  padding-top: 10rpx;
+}
+.line2{
+  color: #898989;
+}
+
+.line3{
+  margin-top: 17px;
+  color: #e22e1e;
+  line-height:70rpx;
+}
+
+.line4 text{
+  border:solid 1px #E0C99F;
+  color: #E0C99F;
+  padding:2rpx 10rpx;
+  margin-right: 10rpx;
+}
+
+.itemhover{
+  background-color: #eee;
+}
+
+/* 加减按钮 */
+.addbox{
+  height: 25px;
+  width: 70px;
+  /* background-color: aqua; */
+  position: absolute;
+  top: 40%;
+  left: 62%;
+}
+
+.add{
+  height: 20px;
+  width: 20px;
+  border-radius: 10px;
+  background-color: #f70c0c;
+  float: right;
+  color: rgb(255, 255, 255);
+  text-align: center;
+  line-height: 18px;
+  font-size: 23px;
+}
+
+.jian{
+  height: 20px;
+  width: 20px;
+  border-radius: 10px;
+  background-color: #fcfcfc;
+  border: 1px solid #d8d4d4;
+  float: left;
+  color: rgb(0, 0, 0);
+  text-align: center;
+  line-height: 18px;
+  font-size: 23px;
+
+}
+
+.nember{
+  text-align: center;
+  margin-left: 25px;
+  position: absolute;
+  
+}
+
+
+/* 购物车 */
+.FoodBottom {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  background-color: rgb(74, 69, 75);
+  width: 70%;
+  height: 50px;
+  z-index: 777;
+}
+.Foodbg{
+  position: fixed;
+  top: 10px;
+  left: 0;
+  background-color:rgb(73, 73, 73);
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  opacity: 0.5
+}
+.GoPay {
+  width: 30%;
+  background-color: rgb(216, 23, 70);
+  height: 50px;
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  text-align: center;
+  line-height: 50px;
+  color: #FFFFFF;
+  font-weight: bold;
+  z-index: 989;
+}
+.FoodLength{
+  width: 50px;
+  height: 50px;
+  border-radius:50%;
+  border: 6px solid  rgb(74, 69, 75);
+  /* background-color: rgb(0, 162, 225); */
+  background-color: #FFFFFF;
+  position: absolute;
+  left: 20px;
+  bottom: 10px;
+}
+.FoodLengthNumber{
+  width: 20px;
+  height: 20px;
+  border-radius:50%;
+  background-color: #FFA500;
+  position: absolute;
+  left: 33px;
+  bottom:38px;
+  color: #FFFFFF;
+  text-align: center;
+  line-height: 20px;
+  font-size: 15px;
+  font-weight: bold;
+}
+.FoodLengthImg{
+  width: 70%;
+  height: 70%;
+  align-content: center;
+  position: absolute;
+  left:6px;
+  top: 6px;
+}
+.FoodMoney{
+  color: #FFFFFF;
+  font-size: 25px;
+  position: absolute;
+  left:85px;
+  line-height: 50px;
+}
+.CartBox{
+  position: fixed;
+  z-index: 999;
+  width: 100%;
+  height: 40%;
+  background-color: #FFFFFF;
+  bottom: 0px;
+  left: 0;
+}
+.under_line1{
+  height: 70px;
+  margin-top: 10px;
+  position: relative;
+  border-bottom:1px solid rgb(217, 217, 217); 
+  
+}
+.close{
+  width: 100%;
+  height: 40px;
+  font-size: 20px;
+  text-align: right;
+  border-bottom:1px solid rgb(217, 217, 217); 
+}
+.CloseImg{
+  width: 15px;
+  height: 15px;
+  margin-right: 10px;
+  margin-top: 13px;
+
+}
+.CloseTxt{
+  float: left;
+  font-family: '微软雅黑';
+  font-size: 13px;
+  color: rgb(62, 62, 62);
+  line-height:40px;
+  margin-left: 10px;
+
+}
+.CloseTxt1{
+  float: right;
+  font-size: 13px;
+  color: rgb(62, 62, 62);
+  line-height:40px;
+  margin-right: 30px;
+}
+.FoodName1{
+line-height: 40px;
+margin-left: 30px;
+}
+.FoodPay1{
+line-height: 20px;
+margin-left: 30px;
+  color: #ff4500;
+
+}

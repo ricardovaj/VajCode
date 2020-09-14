@@ -1,0 +1,91 @@
+/* pages/myorder/myorder.wxss */
+.container{
+  background-color: #fff;
+}
+/* 第一部分 */
+.box1{
+  width: 92%;
+  height: 200rpx;
+  margin: auto;
+  border:solid rgb(214, 208, 211) 1rpx;
+}
+.top1{
+  width: 100%;
+  height: 60rpx;
+  line-height: 60rpx;
+  text-align: center;
+  font-size: 36rpx;
+}
+.top2{
+  width: 100%;
+  font-size: 24rpx;
+  height: 60rpx;
+  line-height: 60rpx;
+  text-align: center;
+  color: gainsboro;
+}
+.top3{
+  width: 150rpx;
+  height: 60rpx;
+  line-height: 60rpx;
+  text-align: center;
+  font-size: 26rpx;
+  margin: 5rpx auto;
+  border:solid #ffe600 1rpx;
+  background-color: #ffe600;
+}
+.prolistbox{
+  width: 100%;
+  margin-top: 10rpx;
+}
+.proitem{
+  margin:30rpx;
+  margin-top: 0;
+  border-bottom-right-radius: 10rpx;
+  border-bottom-left-radius: 10rpx;
+  box-shadow: 0 0 3rpx 0 rgba(0, 0,0, 0.5);
+  padding-bottom: 50rpx;
+  position: relative;
+}
+.a11{
+  width: 220rpx;
+  border-radius: 10rpx;
+  margin: 20rpx;
+}
+/* 改 */
+.rightbox{
+  width:calc(100% - 270rpx);
+  height: 200rpx;
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+.line1{
+  font-size: 30rpx;
+  padding-top: 10rpx;
+}
+.text1{
+  padding-left: 80rpx;
+  color: #ff6600;
+}
+.line2{
+  color: #898989;
+  padding-top: 40rpx;
+}
+.a22{
+  width: 35rpx;
+  height: 35rpx;
+  padding-left: 250rpx;
+}
+.text2{
+  padding-left: 10rpx;
+  font-size: 20rpx;
+  color: black;
+}
+.itemhover{
+  box-shadow: 0 0 15rpx 1rpx rgba(0, 0,0, 0.8);
+}
+.a1{
+  color: #333;
+  padding: 10rpx 20rpx;
+}
